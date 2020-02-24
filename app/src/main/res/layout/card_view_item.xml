@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:padding="16dp"
+
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        android:shape="ring"
+        android:innerRadius="0dp"
+        app:cardCornerRadius="28dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="25dp"
+        card_view:cardElevation="12dp"
+        card_view:cardMaxElevation="16dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diagnosisName"
+                android:text="Diarrhea"
+                android:textColor="@android:color/white"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="28dp"
+                />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="SYMPTOM"
+                android:textSize="16dp"
+                android:layout_below="@+id/diagnosisName"
+                android:id="@+id/SYMPTOM"
+                />
+
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSymptom"
+                android:layout_centerHorizontal="true"
+                android:text="HeadAche"
+                android:layout_below="@+id/SYMPTOM"
+                />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/PRESCRIPTION"
+                android:layout_centerHorizontal="true"
+                android:text="PRESCRIPTION"
+                android:textSize="16dp"
+                android:layout_below="@+id/tvSymptom"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPrescription"
+                android:layout_centerHorizontal="true"
+                android:text="Loperamide"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/PRESCRIPTION"
+                />
+
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReminder"
+                android:layout_centerHorizontal="true"
+                android:text="Note: If symptoms persists consult your doctor."
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/tvPrescription"
+                />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
